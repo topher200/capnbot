@@ -1,7 +1,4 @@
 ["dice.coffee",
- "ascii.coffee",
- "bang.coffee",
+ "bang-bang.coffee",
  "decide.coffee",
- "devexcuse.coffee",
- "eval.coffee",
  "aww.coffee"]
