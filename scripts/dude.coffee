@@ -5,7 +5,7 @@
 #   Internet connection
 #
 # Commands:
-#   dude
+#   dude - Get a random quote from lebowski.me
 #
 # Author:
 #   Topher. chris.brown@farsounder.com
