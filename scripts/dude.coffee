@@ -21,4 +21,7 @@ module.exports = (robot) ->
         res.send err
         return
       for line in JSON.parse(body).quote.lines
-        res.send "#{line.character.name}: #{line.text}."
+        name = line.character.name
+        if line.character.name == "The Dude"
+          name = ":dude:"
+        res.send "#{name}: #{line.text}."
