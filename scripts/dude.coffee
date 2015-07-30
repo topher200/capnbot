@@ -24,4 +24,4 @@ module.exports = (robot) ->
         name = line.character.name
         if line.character.name == "The Dude"
           name = ":dude:"
-        res.send "#{name}: #{line.text}."
+        res.send "#{name}: #{line.text}"
