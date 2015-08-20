@@ -5,14 +5,14 @@
 #   Internet connection
 #
 # Commands:
-#   dude me - Get a random quote from lebowski.me
+#   dude - Get a random quote from lebowski.me
 #
 # Author:
 #   Topher. chris.brown@farsounder.com
 
 
 module.exports = (robot) ->
-  robot.hear /dude me/i, (res) ->
+  robot.hear /dude/i, (res) ->
     robot.http("http://lebowski.me/api/quotes/random")
     .header('Accept', 'application/json')
     .get() (err, _, body) ->
