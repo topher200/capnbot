@@ -20,7 +20,7 @@ module.exports = (robot) ->
   robot.router.get '/hubot/coffeebottrigger', (req, res) ->
     if robot.brain.get('coffeeDoneCallback') == null
       # We're not currently brewing!
-      robot.messageRoom "bots-bots-bots", "Coffee's going dude"
+      robot.messageRoom "bots-bots-bots", "We're starting to brew!"
     else
       # We're already brewing! Turn off the last callback so we can make a new
       # one
@@ -29,7 +29,7 @@ module.exports = (robot) ->
 
     # After 10 seconds, trigger "Coffee is ready!" with a callback
     coffeeDoneFunc = ->
-      robot.messageRoom "bots-bots-bots", ":coffee: Careful man, there's a beverage here! :coffee:"
+      robot.messageRoom "bots-bots-bots", ":coffee: Coffee ready! :coffee:"
       robot.brain.set 'coffeeDoneCallback', null
     robot.brain.set 'coffeeDoneCallback', setTimeout(coffeeDoneFunc, 10 * 1000)
 
