@@ -25,3 +25,4 @@ module.exports = (robot) ->
         if line.character.name == "The Dude"
           name = ":dude:"
         res.send "#{name}: #{line.text}"
+        robot.messageRoom "bots-bots-bots", "Hello bot world! (test)"
