@@ -20,7 +20,7 @@ module.exports = (robot) ->
   robot.router.get '/hubot/coffeebottrigger', (req, res) ->
     if robot.brain.get('coffeeDoneCallback') == null
       # We're not currently brewing!
-      robot.messageRoom "bots-bots-bots", ":todd: We're making coff-ay."
+      robot.messageRoom "bots-bots-bots", "We're making coff-ay. :todd:"
     else
       # We're already brewing! Turn off the last callback so we can make a new
       # one
