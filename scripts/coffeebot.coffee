@@ -29,7 +29,7 @@ module.exports = (robot) ->
 
     # After 10 seconds, trigger "Coffee is ready!" with a callback
     coffeeDoneFunc = ->
-      robot.messageRoom "bots-bots-bots", ":coffee: Coffee ready! :coffee:"
+      robot.messageRoom "bots-bots-bots", "/giphy coffee"
       robot.brain.set 'coffeeDoneCallback', null
     robot.brain.set 'coffeeDoneCallback', setTimeout(coffeeDoneFunc, 10 * 1000)
 
