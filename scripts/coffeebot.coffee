@@ -12,6 +12,6 @@
 
 
 module.exports = (robot) ->
-  robot.router.post '/coffeebot-trigger', (req, res) ->
+  robot.router.post '/hubot/coffeebottrigger', (req, res) ->
     robot.messageRoom "bots-bots-bots", "Hello bot world!"
     res.send 'OK'
