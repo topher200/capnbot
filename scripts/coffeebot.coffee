@@ -1,15 +1,9 @@
 # Description:
 #   Responds with "The Big Lebowski" quotes from lebowski.me
 #
-# Dependencies:
-#   Internet connection
-#
-# Commands:
-#   dude - Get a random quote from lebowski.me
-#
 # Author:
 #   Topher. chris.brown@farsounder.com
-
+#   Nick. nicholas.steffen@farsounder.com
 
 module.exports = (robot) ->
   robot.router.get '/hubot/coffeebottrigger', (req, res) ->
