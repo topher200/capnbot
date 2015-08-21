@@ -27,10 +27,10 @@ module.exports = (robot) ->
       clearTimeout(robot.brain.get('coffeeDoneCallback'))
       robot.brain.set 'coffeeDoneCallback', null
 
-    # After 10 seconds, trigger "Coffee is ready!" with a callback
+    # After 30 seconds, trigger "Coffee is ready!" with a callback
     coffeeDoneFunc = ->
       robot.messageRoom "coffee-coffee-coffee", ":coffee: Coffee ready! :coffee:"
       robot.brain.set 'coffeeDoneCallback', null
-    robot.brain.set 'coffeeDoneCallback', setTimeout(coffeeDoneFunc, 10 * 1000)
+    robot.brain.set 'coffeeDoneCallback', setTimeout(coffeeDoneFunc, 30 * 1000)
 
     res.send 'OK'
